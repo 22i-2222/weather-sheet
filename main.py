@@ -11,8 +11,8 @@ from google.oauth2.service_account import Credentials
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger("weather")
 
-LAT = os.environ["LAT"]
-LON = os.environ["LON"]
+LAT = "33.6844"   
+LON = "73.0479" 
 SHEET_ID = os.environ["SHEET_ID"]
 WORKSHEET = os.environ.get("WORKSHEET", "Sheet1")
 INTERVAL = int(os.environ.get("INTERVAL_SECONDS", "30"))
